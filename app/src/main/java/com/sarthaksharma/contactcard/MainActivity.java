@@ -19,4 +19,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
         Toast.makeText(this,"Button Clicked",Toast.LENGTH_SHORT).show();
     }
+
+    public void signUp(View view) {
+        Intent intent = new Intent(this, Main3Activity.class);
+        startActivity(intent);
+        Toast.makeText(this,"Button Clicked",Toast.LENGTH_SHORT).show();
+    }
 }
