@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void login(View view) {
-        Intent intent = new Intent(this,Main2Activity.class);
+        Intent intent = new Intent(this,Main4Activity.class);
         startActivity(intent);
         Toast.makeText(this,"Button Clicked",Toast.LENGTH_SHORT).show();
     }
