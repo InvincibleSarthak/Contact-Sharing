@@ -1,7 +1,11 @@
 package com.sarthaksharma.contactcard;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.database.Cursor;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v4.app.FragmentTransaction;
@@ -82,6 +86,23 @@ public class Main4Activity extends AppCompatActivity
 
         return super.onOptionsItemSelected(item);
     }
+    //Opening Contacts
+    @Override
+    public void onActivityResult (int reqCode, int resultCode, Intent data){
+        super.onActivityResult(reqCode,resultCode,data);
+
+        switch(reqCode){
+            case(1) :
+                if (resultCode == Activity.RESULT_OK){
+                    Uri contactData = data.getData();
+                    Cursor c =managedQuery(contactData,null,null,null,null);
+                    if(c.moveToFirst()){
+                        String name = c.getString(c.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+                    }
+                }
+                break;
+        }
+    }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -92,14 +113,17 @@ public class Main4Activity extends AppCompatActivity
         if (id == R.id.nav_home) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.flMain, new HomeFragment());
+            ft.commit();
 
-        } else if (id == R.id.nav_add_contact) {
-            Intent intent = new Intent(this,Main2Activity.class);
-            startActivity(intent);
-
-        } else if (id == R.id.nav_send_contact) {
+        } else if (id == R.id.nav_send_new) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
             ft.replace(R.id.flMain, new SendContactFragment());
+            ft.commit();
+
+        } else if (id == R.id.nav_send_contact){
+            //Opening Contacts
+            Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+            startActivityForResult(intent,1);
 
         } else if (id == R.id.nav_sign_out) {
             Intent intent = new Intent(this,MainActivity.class);
