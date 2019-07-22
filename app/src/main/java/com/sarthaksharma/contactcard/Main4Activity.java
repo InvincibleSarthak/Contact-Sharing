@@ -116,9 +116,8 @@ public class Main4Activity extends AppCompatActivity
             ft.commit();
 
         } else if (id == R.id.nav_send_new) {
-            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.flMain, new SendContactFragment());
-            ft.commit();
+            Intent intent = new Intent(this,SendContact.class);
+            startActivity(intent);
 
         } else if (id == R.id.nav_send_contact){
             //Opening Contacts
