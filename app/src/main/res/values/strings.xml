@@ -3,7 +3,7 @@
     <string name="phone_number">Enter Mobile Number</string>
     <string name="otp">Enter OTP</string>
     <string name="login">LOGIN</string>
-    <string name="send">SEND OTP</string>
+    <string name="send">GENERATE OTP</string>
     <string name="welcome">Welcome,</string>
     <string name="sign_in">Sign in to continue</string>
     <string name="first_name">First Name</string>

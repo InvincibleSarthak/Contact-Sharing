@@ -11,19 +11,20 @@ import android.widget.Button;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn;
+    Button btn,loginBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         btn=findViewById(R.id.login);
+        loginBtn=findViewById(R.id.login_button);
     }
 
     public void login(View view) {
         btn.setVisibility(View.GONE);
-        Toast.makeText(this,"Button Clicked",Toast.LENGTH_SHORT).show();
         FragmentManager fm = getSupportFragmentManager();
         OTPScreen otp = new OTPScreen();
         fm.beginTransaction().replace(R.id.Main, otp).commit();
     }
+
 }
