@@ -30,28 +30,28 @@
                 android:orientation="vertical">
 
                 <EditText
-                    android:id="@+id/firstName"
+                    android:id="@+id/fullName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="52dp"
                     android:ems="10"
-                    android:hint="@string/first_name"
+                    android:hint="@string/full_name"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
-                    android:id="@+id/lastName"
+                    android:id="@+id/profession"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="@string/last_name"
+                    android:hint="@string/profession"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/firstName" />
+                    app:layout_constraintTop_toBottomOf="@+id/fullName" />
 
                 <EditText
                     android:id="@+id/company_name"
@@ -63,15 +63,15 @@
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/lastName" />
+                    app:layout_constraintTop_toBottomOf="@+id/profession" />
 
                 <EditText
-                    android:id="@+id/company_title"
+                    android:id="@+id/website"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="@string/company_title"
+                    android:hint="@string/website"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -87,19 +87,44 @@
                     android:inputType="phone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/company_title" />
+                    app:layout_constraintTop_toBottomOf="@+id/website" />
 
                 <EditText
-                    android:id="@+id/email_address"
+                    android:id="@+id/alt_mobile_number"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="@string/e_mail_id"
-                    android:inputType="textEmailAddress"
+                    android:hint="@string/alt_mobile_number"
+                    android:inputType="phone"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/mobile_number" />
+
+                <EditText
+                    android:id="@+id/official"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:ems="10"
+                    android:hint="@string/official_mobile_number"
+                    android:inputType="phone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/alt_mobile_number" />
+
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="36dp"
+                    android:ems="10"
+                    android:hint="@string/LOCATION"
+                    android:inputType="textPersonName"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/official" />
 
                 <EditText
                     android:id="@+id/profile1"
@@ -107,11 +132,11 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="Facebook Profile"
-                    android:inputType="textPersonName"
+                    android:hint="Facebook Page"
+                    android:inputType="textWebEditText"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/email_address" />
+                    app:layout_constraintTop_toBottomOf="@+id/location" />
 
                 <EditText
                     android:id="@+id/profile2"
@@ -119,19 +144,19 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="Instagram Profile"
-                    android:inputType="textPersonName"
+                    android:hint="LinkedIn Profile"
+                    android:inputType="textWebEditText"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/profile1" />
 
                 <EditText
-                    android:id="@+id/profile3"
+                    android:id="@+id/info"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
                     android:ems="10"
-                    android:hint="Twitter Profile"
+                    android:hint="Additional Information"
                     android:inputType="textPersonName"
                     app:layout_constraintTop_toBottomOf="@+id/profile2"
                     tools:layout_editor_absoluteX="99dp"

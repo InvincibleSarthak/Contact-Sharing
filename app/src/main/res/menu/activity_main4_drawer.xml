@@ -14,11 +14,6 @@
             android:title="@string/send_contact" />
 
         <item
-            android:id="@+id/nav_send_new"
-            android:icon="@drawable/ic_person_add_black"
-            android:title="@string/new_contact" />
-
-        <item
             android:id="@+id/nav_sign_out"
             android:icon="@drawable/ic_lock_outline_black"
             android:title="@string/log_out" />

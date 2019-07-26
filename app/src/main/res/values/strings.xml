@@ -7,8 +7,9 @@
     <string name="send_message">SEND</string>
     <string name="welcome">Welcome,</string>
     <string name="sign_in">Sign in to continue</string>
-    <string name="first_name">First Name</string>
-    <string name="last_name">Last Name</string>
+    <string name="full_name">Full Name</string>
+    <string name="profession">Profession</string>
+    <string name="website">Personal Website or Blog</string>
     <string name="company">Company</string>
     <string name="new_contact">Send Contact to New User</string>
     <string name="company_title">Title</string>
@@ -25,11 +26,17 @@
     <string name="action_settings">Settings</string>
     <string name="home">Home</string>
     <string name="add_contact">Add Contact</string>
-    <string name="send_contact">Send Contact to Existing User</string>
+    <string name="send_contact">Send Contact</string>
     <string name="log_out">Log Out</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="OTP_heading">Enter One Time Password</string>
     <string name="OTP_text">One Time Password (OTP) has been sent to your mobile, please enter the same here to login.</string>
     <string name="button">Button</string>
+    <string name="official_mobile_number">Official Phone Number</string>
+    <string name="alt_mobile_number">Alternate Mobile Number</string>
+    <string name="LOCATION">Location</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

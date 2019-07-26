@@ -49,8 +49,9 @@ public class Main4Activity extends AppCompatActivity
 
         //default fragment for home
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.replace(R.id.flMain,new HomeFragment());
+        ft.replace(R.id.flMain,new ProfileFragment());
         ft.commit();
+
 
         navigationView.setCheckedItem(R.id.nav_home);
     }
@@ -112,12 +113,8 @@ public class Main4Activity extends AppCompatActivity
 
         if (id == R.id.nav_home) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.replace(R.id.flMain, new HomeFragment());
+            ft.replace(R.id.flMain, new ProfileFragment());
             ft.commit();
-
-        } else if (id == R.id.nav_send_new) {
-            Intent intent = new Intent(this,SendContact.class);
-            startActivity(intent);
 
         } else if (id == R.id.nav_send_contact){
             //Opening Contacts
