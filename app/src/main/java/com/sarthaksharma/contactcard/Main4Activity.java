@@ -118,8 +118,11 @@ public class Main4Activity extends AppCompatActivity
 
         } else if (id == R.id.nav_send_contact){
             //Opening Contacts
-            Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-            startActivityForResult(intent,1);
+            //Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+            //startActivityForResult(intent,1);
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.replace(R.id.flMain, new SendFragment());
+            ft.commit();
 
         } else if (id == R.id.nav_sign_out) {
             Intent intent = new Intent(this,MainActivity.class);
