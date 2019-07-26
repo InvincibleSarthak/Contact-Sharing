@@ -4,19 +4,20 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    android:background="@android:color/white">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentLeft="true">
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
@@ -27,15 +28,37 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp">
+
+                <TextView
+                    android:id="@+id/profile_heading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="46dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/profile_heading"
+                    android:textColor="@color/blue"
+                    android:textSize="23sp"
+                    android:textStyle="bold"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
                 <EditText
                     android:id="@+id/fullName"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="52dp"
+                    android:background="@android:color/white"
                     android:ems="10"
                     android:hint="@string/full_name"
+                    android:textColorHint="@color/blue"
+                    android:textSize="20sp"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -44,8 +67,11 @@
                 <EditText
                     android:id="@+id/profession"
                     android:layout_width="match_parent"
+                    android:textColorHint="@color/blue"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
+                    android:textSize="20sp"
                     android:ems="10"
                     android:hint="@string/profession"
                     android:inputType="textPersonName"
@@ -55,11 +81,14 @@
 
                 <EditText
                     android:id="@+id/company_name"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
                     android:hint="@string/company"
+                    android:textSize="20sp"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
@@ -67,9 +96,12 @@
 
                 <EditText
                     android:id="@+id/website"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
+                    android:textSize="20sp"
                     android:ems="10"
                     android:hint="@string/website"
                     android:inputType="textPersonName"
@@ -82,7 +114,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:textColorHint="@color/blue"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="@string/mobile_number"
                     android:inputType="phone"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -92,9 +127,12 @@
                 <EditText
                     android:id="@+id/alt_mobile_number"
                     android:layout_width="match_parent"
+                    android:textColorHint="@color/blue"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="@string/alt_mobile_number"
                     android:inputType="phone"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -103,10 +141,13 @@
 
                 <EditText
                     android:id="@+id/official"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="@string/official_mobile_number"
                     android:inputType="phone"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -116,10 +157,13 @@
 
                 <EditText
                     android:id="@+id/location"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="@string/LOCATION"
                     android:inputType="textPersonName"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -128,10 +172,13 @@
 
                 <EditText
                     android:id="@+id/profile1"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="Facebook Page"
                     android:inputType="textWebEditText"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -140,10 +187,13 @@
 
                 <EditText
                     android:id="@+id/profile2"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="LinkedIn Profile"
                     android:inputType="textWebEditText"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -152,10 +202,13 @@
 
                 <EditText
                     android:id="@+id/info"
+                    android:textColorHint="@color/blue"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="36dp"
+                    android:background="@android:color/white"
                     android:ems="10"
+                    android:textSize="20sp"
                     android:hint="Additional Information"
                     android:inputType="textPersonName"
                     app:layout_constraintTop_toBottomOf="@+id/profile2"
