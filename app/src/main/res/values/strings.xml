@@ -5,9 +5,10 @@
     <string name="login">LOGIN</string>
     <string name="send">GENERATE OTP</string>
     <string name="send_message">SEND</string>
-    <string name="welcome">Welcome,</string>
-    <string name="sign_in">Sign in to continue</string>
-    <string name="full_name">Full Name</string>
+    <string name="welcome">Welcome!</string>
+    <string name="heading_main">Now you can send your contact details quickly and easily</string>
+    <string name="sign_in">Just sign in to continue</string>
+    <string name="full_name">*Full Name</string>
     <string name="profession">Profession</string>
     <string name="website">Personal Website or Blog</string>
     <string name="company">Company</string>
@@ -16,7 +17,7 @@
     <string name="profile_heading">My Details</string>
     <string name="company_title">Title</string>
     <string name="message">Write a message!!</string>
-    <string name="mobile_number">Mobile Number</string>
+    <string name="mobile_number">*Mobile Number</string>
     <string name="e_mail_id">E-Mail Id</string>
     <string name="signUp">Sign Up</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -36,7 +37,7 @@
     <string name="button">Button</string>
     <string name="official_mobile_number">Official Phone Number</string>
     <string name="alt_mobile_number">Alternate Mobile Number</string>
-    <string name="LOCATION">Location</string>
+    <string name="LOCATION">*Location</string>
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
