@@ -24,7 +24,7 @@
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@android:color/white"/>
+            android:background="@color/gray"/>
 
     </LinearLayout>
 
@@ -41,30 +41,20 @@
         android:background="@android:color/white"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/heading_main"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_marginRight="15dp"
-            android:background="@android:color/transparent"
-            android:ems="10"
-            android:text="@string/heading_main"
-            android:textAlignment="center"
-            android:textColor="@color/blue"
-            android:textSize="17sp"
-            app:layout_constraintBottom_toBottomOf="@+id/welcome_text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+        <ImageView
+            android:layout_width="166dp"
+            android:layout_height="88dp"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_person_blue"
+            android:contentDescription="TODO" />
 
         <EditText
             android:id="@+id/phone_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="15dp"
             android:background="@android:color/white"
             android:ems="10"
@@ -83,7 +73,7 @@
             android:layout_marginLeft="15dp"
             android:layout_marginTop="30dp"
             android:layout_marginRight="15dp"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="40dp"
             android:background="@color/blue"
             android:onClick="login"
             android:text="@string/send"
@@ -130,5 +120,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/welcome"
         android:layout_marginStart="20dp" />
+
+    <TextView
+        android:id="@+id/heading_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="650dp"
+        android:layout_marginRight="15dp"
+        android:background="@color/gray"
+        android:ems="10"
+        android:text="@string/heading_main"
+        android:textAlignment="center"
+        android:textColor="@color/blue"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="@+id/welcome_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </RelativeLayout>
