@@ -71,6 +71,7 @@
         android:layout_marginTop="28sp"
         android:background="@color/blue"
         android:text="@string/login"
+        android:onClick="Login"
         android:textColor="@android:color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
